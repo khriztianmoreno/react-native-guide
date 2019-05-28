@@ -9,7 +9,14 @@ const sections = [
       {id: 0, text: 'View'},
       {id: 1, text: 'Text'},
       {id: 2, text: 'Image'},
-    ]
+    ],
+    renderItem: ({item}) => {
+      return (
+        <Text style={styles.row}>
+          {item.text}
+        </Text>
+      )
+    }
   },
   {
     id: 1,
@@ -17,21 +24,20 @@ const sections = [
     data: [
       {id: 3, text: 'ScrollView'},
       {id: 4, text: 'ListView'},
-    ]
+    ],
+    renderItem: ({item}) => {
+      return (
+        <Text style={styles.rowDark}>
+          {item.text}
+        </Text>
+      )
+    }
   }
 ]
 
 const extractKey = ({id}) => id.toString()
 
 export default class App extends Component {
-
-  renderItem = ({item}) => {
-    return (
-      <Text style={styles.row}>
-        {item.text}
-      </Text>
-    )
-  }
 
   renderSectionHeader = ({section}) => {
     return (
@@ -46,7 +52,6 @@ export default class App extends Component {
       <SectionList
         style={styles.container}
         sections={sections}
-        renderItem={this.renderItem}
         renderSectionHeader={this.renderSectionHeader}
         keyExtractor={extractKey}
       />
@@ -64,10 +69,15 @@ const styles = StyleSheet.create({
     marginBottom: 5,
     backgroundColor: 'skyblue',
   },
-  header: {
+  rowDark: {
     padding: 15,
     marginBottom: 5,
     backgroundColor: 'steelblue',
+  },
+  header: {
+    padding: 15,
+    marginBottom: 5,
+    backgroundColor: 'darkblue',
     color: 'white',
     fontWeight: 'bold',
   },
