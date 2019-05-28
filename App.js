@@ -1,21 +1,49 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { Component } from 'react'
+import { View } from 'react-native'
 
-export default class App extends React.Component {
+import List from './List'
+import Input from './Input'
+import Title from './Title'
+
+export default class App extends Component {
+
+  state = {
+    todos: ['Click to remove', 'Learn React Native', 'Write Code', 'Ship App'],
+  }
+
+  onAddTodo = (text) => {
+    const {todos} = this.state
+
+    this.setState({
+      todos: [text, ...todos],
+    })
+  }
+
+  onRemoveTodo = (index) => {
+    const {todos} = this.state
+
+    this.setState({
+      todos: todos.filter((todo, i) => i !== index),
+    })
+  }
+
   render() {
+    const {todos} = this.state
+
     return (
-      <View style={styles.container}>
-        <Text>Aprender React Native me ayudara en mi camino como React Developer</Text>
+      <View>
+        <Title>
+          To-Do List
+        </Title>
+        <Input
+          placeholder={'Type a todo, then hit enter!'}
+          onSubmitEditing={this.onAddTodo}
+        />
+        <List
+          list={todos}
+          onPressItem={this.onRemoveTodo}
+        />
       </View>
-    );
+    )
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
