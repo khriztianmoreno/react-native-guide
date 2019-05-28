@@ -1,21 +1,27 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { Component } from 'react'
+import { View, Image, StyleSheet } from 'react-native'
 
-export default class App extends React.Component {
+export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Aprender React Native me ayudara en mi camino como React Developer</Text>
+        <Image
+          style={styles.image}
+          source={{uri: 'http://www.reactnativeexpress.com/logo.png'}}
+        />
       </View>
-    );
+    )
   }
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
     justifyContent: 'center',
+    alignItems: 'center',
+    paddingTop: 200,
   },
-});
+  image: {
+    width: 200,
+    height: 200,
+  },
+})
