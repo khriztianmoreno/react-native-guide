@@ -12,5 +12,13 @@ This is a basic guide to show the basics of RN. This repo contains different exa
 6. [Core Component - ScrollView](https://github.com/khriztianmoreno/react-native-guide/tree/5-core-component-scrollview) `git checkout 5-core-component-scrollview`
 7. [Core Component - FlatList](https://github.com/khriztianmoreno/react-native-guide/tree/6-core-component-flatlist) `git checkout 6-core-component-flatlist`
 8. [Core Component - SectionList](https://github.com/khriztianmoreno/react-native-guide/tree/7-core-component-sectionlistl) `git checkout 7-core-component-sectionlistl`
-9. [Core Component - FlexBox](https://github.com/khriztianmoreno/react-native-guide/tree/8-core-component-flexbox) `git checkout 8-core-component-flexbox`
-10. [Data Management - Component State](https://github.com/khriztianmoreno/react-native-guide/tree/9-data-management-component-state) `git checkout 9-data-management-component-state`
+9. [Styles](https://github.com/khriztianmoreno/react-native-guide/tree/10-styles) `git checkout 10-styles`
+10. [Height and Width](https://github.com/khriztianmoreno/react-native-guide/tree/11-height-width) `git checkout 11-height-width`
+11. [FlexBox](https://github.com/khriztianmoreno/react-native-guide/tree/8-core-component-flexbox) `git checkout 8-core-component-flexbox`
+12. [Flex Dimensions](https://github.com/khriztianmoreno/react-native-guide/tree/12-flex-dimensions) `git checkout 12-flex-dimension`
+13. [UI Libraries - React Native Elements](https://github.com/khriztianmoreno/react-native-guide/tree/13-ui-libraries-react-native-elements) `git checkout 13-ui-libraries-react-native-elements`
+14. [UI Libraries - Native Base](https://github.com/khriztianmoreno/react-native-guide/tree/14-ui-librarie-native-bases) `git checkout 14-ui-librarie-native-bases`
+15. [Events - Text input](https://github.com/khriztianmoreno/react-native-guide/tree/15-events-textinput) `git checkout 15-events-textinput`
+16. [Events - Button](https://github.com/khriztianmoreno/react-native-guide/tree/16-events-touches) `git checkout 16-events-touches`
+17. [Events - Touchable](https://github.com/khriztianmoreno/react-native-guide/tree/16-1--events-touches) `git checkout 16-1--events-touches`
+99. [Data Management - Component State](https://github.com/khriztianmoreno/react-native-guide/tree/9-data-management-component-state) `git checkout 9-data-management-component-state`
