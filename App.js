@@ -1,11 +1,13 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 
-export default class App extends React.Component {
+export default class FixedDimensionsBasics extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Aprender React Native me ayudara en mi camino como React Developer</Text>
+        <View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} />
+        <View style={{width: 100, height: 100, backgroundColor: 'skyblue'}} />
+        <View style={{width: 150, height: 150, backgroundColor: 'steelblue'}} />
       </View>
     );
   }
