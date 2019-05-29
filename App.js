@@ -1,12 +1,15 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { ScrollView, StyleSheet, Text, View } from 'react-native';
 
 export default class App extends React.Component {
   render() {
+    const topics = ['Javascript', 'CSS', 'HTLM', 'React']
     return (
-      <View style={styles.container}>
-        <Text>Aprender React Native me ayudara en mi camino como React Developer</Text>
-      </View>
+      <ScrollView style={{paddingTop: 100}}>
+        {
+          topics.map((item, idx) => <Text key={idx} style={styles.text} >{item}</Text>)
+        }
+      </ScrollView>
     );
   }
 }
@@ -18,4 +21,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  text: {
+    color: 'blue',
+  }
 });
