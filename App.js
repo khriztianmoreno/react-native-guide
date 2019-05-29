@@ -1,21 +1,18 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { createStore } from 'redux'
+import { Provider } from 'react-redux'
 
-export default class App extends React.Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text>Aprender React Native me ayudara en mi camino como React Developer</Text>
-      </View>
-    );
-  }
-}
+// Import the reducer and create a store
+import { reducer } from './todoListRedux'
+const store = createStore(reducer)
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+// Import the App container component
+import Main from './Main'
+
+// Pass the store into the Provider
+const AppWithStore = () => (
+  <Provider store={store}>
+    <Main />
+  </Provider>
+)
+
+export default AppWithStore
