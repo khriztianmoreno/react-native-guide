@@ -1488,7 +1488,7 @@ babel-plugin-transform-strict-mode@^6.24.1:
     babel-runtime "^6.22.0"
     babel-types "^6.24.1"
 
-babel-preset-expo@^5.0.0:
+babel-preset-expo@5.1.1, babel-preset-expo@^5.0.0:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/babel-preset-expo/-/babel-preset-expo-5.1.1.tgz#2fb9e14013ee872b1716d857e3c583981a47e3b9"
   integrity sha512-aboINGtepZW4s5IKu9dpNY7RUzTlM4S55xw2cuQ39DiEWY1fr8TsbLyK4lMC5LXrGhoTGypnn85/Y4yPEdnK5g==
@@ -2584,7 +2584,7 @@ expo-task-manager@~1.0.0:
     expo-errors "~1.0.0"
     expo-task-manager-interface "~1.0.0"
 
-expo@^32.0.0:
+expo@32.0.6:
   version "32.0.6"
   resolved "https://registry.yarnpkg.com/expo/-/expo-32.0.6.tgz#71ef60ac5293b9ca8f2219584bc6add8a975714b"
   integrity sha512-LMFtWZY+lwMHkoThTBwirctPB/5WeZtGrVM8MVoCI1e7jlONOfNQceM6X2j06BO5HxcCF/ASJSUDiTIIStAeaA==
@@ -2652,7 +2652,7 @@ expo@^32.0.0:
     qs "^6.5.0"
     react-native-branch "2.2.5"
     react-native-gesture-handler "~1.0.14"
-    react-native-maps expo/react-native-maps#v0.22.1-exp.0
+    react-native-maps "github:expo/react-native-maps#v0.22.1-exp.0"
     react-native-reanimated "1.0.0-alpha.11"
     react-native-screens "1.0.0-alpha.22"
     react-native-svg "8.0.10"
